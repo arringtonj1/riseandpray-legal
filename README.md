@@ -90,4 +90,4 @@ above and, where the change is significant, noted in the app.
 ## Contact
 
 Questions about privacy, or a request about your data:
-**james.m.arrington@gmail.com**
+**support@riseandpray.app**
