@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Board ops calendar · Rise &amp; Pray</title>
+<style>
+  :root { --ink:#2a2724; --secondary:#6f6862; --bg:#faf7f2; --accent:#b08968; --card:#fff; --border:#e8e0d5; }
+  body { margin:0; padding:2.5rem 1.25rem 4rem; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:36rem; margin:0 auto; }
+  h1 { font-size:1.75rem; margin:0 0 .35rem; letter-spacing:-.02em; }
+  .sub { color:var(--secondary); margin:0 0 1.5rem; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.1rem 1.25rem; margin:0 0 1rem; }
+  a { color:var(--accent); font-weight:600; }
+  code { font-size:.9em; background:#f0ebe3; padding:.1em .35em; border-radius:4px; }
+  ol { padding-left:1.2rem; }
+  li { margin:0 0 .5rem; }
+  .btn { display:inline-block; margin:.25rem .5rem .25rem 0; padding:.65rem 1rem; border-radius:10px;
+    background:var(--ink); color:#fff !important; text-decoration:none; font-weight:600; font-size:.95rem; }
+  .btn.secondary { background:transparent; color:var(--ink) !important; border:1px solid var(--border); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Board ops calendar</h1>
+  <p class="sub">Private ops reminder for Jamie — daily community board skim. Not a product feature; not public marketing.</p>
+
+  <div class="card">
+    <p><strong>What you get</strong></p>
+    <p>A daily calendar event at <strong>9:00 AM Central</strong> (15 minutes), with alerts at the start and 10 minutes before. Notes include the three <code>moderate.py</code> commands.</p>
+    <p>
+      <a class="btn" href="webcal://riseandpray.app/ops/board-ops.ics">Subscribe on iPhone / Mac</a>
+      <a class="btn secondary" href="https://riseandpray.app/ops/board-ops.ics">Download .ics</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <p><strong>If the button does nothing</strong></p>
+    <ol>
+      <li>Open <a href="https://riseandpray.app/ops/board-ops.ics">the .ics link</a> in Safari.</li>
+      <li>Or: Settings → Calendar → Accounts → Add Account → Other → <em>Add Subscribed Calendar</em></li>
+      <li>Server: <code>https://riseandpray.app/ops/board-ops.ics</code></li>
+    </ol>
+    <p>After subscribe, open the event once and confirm an alert is set (some devices ignore feed alarms).</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Change the time</strong></p>
+    <p>Edit the ICS in the <code>riseandpray-legal</code> repo (<code>ops/board-ops.ics</code>), push, then wait for Calendar to refresh the subscription (or remove and re-add).</p>
+  </div>
+
+  <p class="sub"><a href="https://riseandpray.app/">riseandpray.app</a></p>
+</main>
+</body>
+</html>
