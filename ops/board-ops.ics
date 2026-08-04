@@ -25,23 +25,22 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:board-ops-daily@riseandpray.app
-DTSTAMP:20260804T173332Z
+DTSTAMP:20260804T212652Z
 DTSTART;TZID=America/Chicago:20260805T090000
 DTEND;TZID=America/Chicago:20260805T091500
 RRULE:FREQ=DAILY
 SUMMARY:Rise & Pray — board ops
-LOCATION:Terminal + Community tab
-DESCRIPTION:Daily community board check (~5 min).\n\nTerminal:\ncd ~/RiseA
- ndPray\npython3 tools/moderate.py reports\npython3 tools/moderate.py boar
- d -n 20\npython3 tools/moderate.py health --days 7\n\nIf 0 praying → ap
- p → Community → Pray\nIf real abuse → python3 tools/moderate.py rem
- ove <id6>\n\nGuide: docs/launch-ops.md in the RiseAndPray repo.\nSubscrib
- e URL: https://riseandpray.app/ops/board-ops.ics
+LOCATION:Mac terminal
+DESCRIPTION:Daily community board check (~2 min).\n\nOn your Mac:\ncd ~/Ri
+ seAndPray\npython3 tools/moderate.py check\n\nThat prints reports (not in
+  the iPhone app) and unanswered asks.\nIf 0 praying → app → Community
+  → Pray\nIf real abuse → python3 tools/moderate.py remove <id6>\n\nht
+ tps://riseandpray.app/ops/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Board ops — moderate.py
+DESCRIPTION:Board ops — python3 tools/moderate.py check
 TRIGGER:-PT0M
 END:VALARM
 BEGIN:VALARM
